@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d7a797b;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+
+
+section {
+    background: #ffffff70;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    animation: fadeIn 1s ease-out;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid hsla(0, 0%, 0%, 0.235);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffffb1;
+    
+}
+
+form button {
+    background-color: #00879c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #03141f;
+}
+
+
+#bookList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bookList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#bookList li:hover {
+    background-color: #050c2891;
+}
+
+#bookList li button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bookList li button:hover {
+    background-color: #c0392b;
+}
+
+
+#studentList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#studentList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#issueBookForm, #returnBookForm {
+    margin: 10px 0;
+}
+
+#issueBookForm input, #returnBookForm input {
+    margin-right: 10px;
+}
+
+#currentTime {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form input, form button {
+        width: 100%;
+    }
+
+    #bookList li, #studentList li {
+        font-size: 14px;
+    }
+}
